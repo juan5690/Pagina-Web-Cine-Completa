@@ -1,0 +1,219 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block  contenido %}
+
+</section>
+
+<section id="venta-boletos" class="mt-5">
+    <div class="container">
+        <p class="text-center mx-auto">Venta de Boletos</p>
+        <div class="row">
+            <div class="col-md-15 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre-pelicula" class="form-label">Nombre de la película</label>
+                        <input type="text" class="form-control" id="nombre-pelicula">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="fecha">
+                    </div>
+                    <div class="mb-3">
+                        <label for="horario" class="form-label">Horario</label>
+                        <select class="form-select" aria-label="Seleccione el horario">
+                            <option selected>Seleccione el horario</option>
+                            <option value="1">10:00 AM</option>
+                            <option value="2">12:00 PM</option>
+                            <option value="3">2:00 PM</option>
+                            <option value="4">4:00 PM</option>
+                            <option value="5">6:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cantidad-boletos" class="form-label">Cantidad de boletos</label>
+                        <input type="number" class="form-control" id="cantidad-boletos" min="1" max="10">
+                    </div>
+                    <button type="submit" formaction="{% url 'medioPago' %}" class="btn btn-primary">Comprar
+                        boletos</button>
+                    <button type="submit" formaction="{% url 'index' %}" class="btn btn-primary">Menu principal</button>
+                </form>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumen de compra</h5>
+                        <p class="card-text">No se ha seleccionado ninguna película.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center">ELIGE TU ASIENTO</h1>
+    <table class="auto-style1">
+        <tr id="butaca">
+            <td class="auto-style3">
+                A</td>
+            <td>
+                &nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
+            <td class="auto-style15">
+                1<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                2<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                3<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                4<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                5<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                6<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                7<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                8<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                9<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                10<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                11<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style15">
+                12<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                13<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                14<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                15<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                16<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                17<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                18<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                19<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                20<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                21<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style15">
+                22<img alt="" src="{% static 'app/imagenes/Butaca_rosada.png' %}" style="height: 29px; width: 35px" /></td>
+            <td class="auto-style10">&nbsp;</td>
+            <td class="auto-style12">&nbsp;</td>
+            <td class="auto-style3">A</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">B</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style14">
+                1<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                2<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                3<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                4<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                5<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                6<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                7<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                8<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                9<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                10<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                11<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style14">
+                12<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                13<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                14<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                15<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                16<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                17<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                18<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                19<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                20<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                21<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                22<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style11"></td>
+            <td class="auto-style13"></td>
+            <td class="auto-style3">B</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">C</td>
+            <td class="auto-style6"></td>
+            <td class="auto-style7"></td>
+            <td class="auto-style14">
+                1<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                2<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                3<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                4<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                5<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                6<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                7<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                8<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                9<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                10<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                11<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style8"></td>
+            <td class="auto-style14">
+                12<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                13<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                14<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style ="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                15<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                16<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                17<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                18<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                19<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                20<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                21<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style14">
+                22<img alt="" src="{% static 'app/imagenes/Butaca_celeste.png' %}" style="height: 25px; width: 34px" /></td>
+            <td class="auto-style11"></td>
+            <td class="auto-style13"></td>
+            <td class="auto-style3">C</td>
+        </tr>
+    </table>
+
+{% endblock  %}
